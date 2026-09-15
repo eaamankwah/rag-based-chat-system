@@ -1,0 +1,99 @@
+NASA RAG Chat - Evaluation Dataset
+===================================
+
+This file lists the sample questions used to test the NASA Mission
+Intelligence RAG system, grouped by category, along with the answer we
+expected the system to produce (based on the source documents in
+data_text/). These same questions are stored in machine-readable form in
+test_questions.json and are consumed end-to-end by batch_evaluate.py,
+which retrieves context, generates an answer, and scores it with RAGAS
+(Response Relevancy, Faithfulness, and - since each question below has a
+reference answer - BLEU, ROUGE, and Context Precision as well).
+
+To reproduce these results yourself:
+    python batch_evaluate.py --openai-key YOUR_KEY \
+        --chroma-dir ./chroma_db_openai \
+        --collection-name nasa_space_missions_text \
+        --test-file test_questions.json \
+        --output evaluation_results.json
+
+
+1. OVERVIEW  (Apollo 11)
+-------------------------
+Q: What was the main objective of the Apollo 11 mission?
+Expected answer: Apollo 11's primary objective was to land astronauts on
+the Moon and return them safely to Earth, fulfilling President Kennedy's
+goal of a crewed lunar landing before the end of the 1960s. The system
+should cite the Apollo 11 flight plan / mission documents as its source.
+
+
+2. EMERGENCY  (Apollo 13)
+--------------------------
+Q: What emergency occurred on Apollo 13 and when did it happen?
+Expected answer: About 56 hours into the mission, an oxygen tank in the
+service module ruptured after a short circuit, crippling power, water,
+and life support and forcing the crew to abort the lunar landing. The
+system should reference the Apollo 13 PAO/technical transcripts.
+
+
+3. DISASTER ANALYSIS  (Challenger)
+------------------------------------
+Q: What caused the Space Shuttle Challenger disaster?
+Expected answer: An O-ring seal in the right solid rocket booster failed,
+allowing hot pressurized gas to escape; this, combined with unusually
+cold launch-morning temperatures, led to the structural breakup of the
+shuttle 73 seconds after liftoff. The system should draw on the
+Challenger mission audio transcripts.
+
+
+4. CREW  (Apollo 13)
+----------------------
+Q: Who were the astronauts on the Apollo 13 crew and how did they
+   survive the accident?
+Expected answer: The crew was Jim Lovell, Jack Swigert, and Fred Haise.
+After the explosion they moved into the Lunar Module and used it as a
+"lifeboat," rationing power, water, and oxygen for the return trip.
+
+
+5. TECHNICAL  (Apollo 11)
+----------------------------
+Q: What technical issues did the Apollo 11 Lunar Module encounter during
+   descent to the Moon?
+Expected answer: The guidance computer triggered 1202 and 1201 program
+alarms from a data overload, and the crew had to manually fly past a
+boulder field to find a safe landing site.
+
+
+6. TIMELINE  (Challenger)
+----------------------------
+Q: What is the timeline of events on the morning of the Challenger
+   launch?
+Expected answer: On January 28, 1986, the launch was delayed several
+times due to cold overnight temperatures and ice on the pad, before
+finally lifting off at 11:38 a.m. EST and breaking apart about 73
+seconds later.
+
+
+7. TECHNICAL  (Apollo 13)
+----------------------------
+Q: How did the Apollo 13 crew remove excess carbon dioxide from the
+   Lunar Module cabin?
+Expected answer: The crew and mission control improvised the "mailbox"
+adapter from spacecraft materials (plastic bags, cardboard, tape) to fit
+the Command Module's square lithium hydroxide canisters into the Lunar
+Module's round receptacles.
+
+
+Grading notes
+-------------
+- Every answer above should be grounded in the retrieved context (high
+  Faithfulness) and directly address the question asked (high Response
+  Relevancy).
+- Because each question has a written reference answer, BLEU/ROUGE/
+  Context Precision are also computed for these seven questions - these
+  are lower-value "nice to have" metrics compared to Faithfulness and
+  Response Relevancy, since a good answer can be worded very differently
+  from the reference and still be fully correct.
+- If the system cannot find relevant context for a question, it should
+  say so explicitly rather than guessing (see the system prompt in
+  llm_client.py).

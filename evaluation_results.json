@@ -1,0 +1,123 @@
+{
+  "per_question": [
+    {
+      "id": "q1",
+      "mission": "apollo_11",
+      "category": "overview",
+      "question": "What was the main objective of the Apollo 11 mission?",
+      "answer": "The main objective of the Apollo 11 mission, as defined in the NASA Headquarters document OMSF M-D MA 500-11 (SE 010-000-1) entitled \"Apollo Flight Mission Assignments\" and prepared on July 11, 1969, was to perform a manned lunar landing and return safely to Earth. This information is sourced from the NASA NTRS Archive document for the Apollo 11 mission.",
+      "reference": "Apollo 11's primary objective was to land astronauts on the Moon and return them safely to Earth, fulfilling President Kennedy's goal of a crewed lunar landing before the end of the 1960s.",
+      "num_contexts_retrieved": 3,
+      "scores": {
+        "response_relevancy": 0.9999995440554499,
+        "faithfulness": 0.6666666666666666,
+        "bleu_score": 0.0481601367057754,
+        "rouge_score": 0.2474226804123711,
+        "context_precision": 0.9999999999666667
+      }
+    },
+    {
+      "id": "q2",
+      "mission": "apollo_13",
+      "category": "emergency",
+      "question": "What emergency occurred on Apollo 13 and when did it happen?",
+      "answer": "The emergency that occurred on Apollo 13 was a water warning light indication. This emergency was reported during a communication between the spacecraft (SC) and the Capsule Communicator (CAP COM) at 117 hours 32 minutes ground elapsed time. The specific details of the emergency and its implications were not provided in the retrieved mission documents.",
+      "reference": "About 56 hours into the mission, an oxygen tank in the Apollo 13 service module ruptured after a short circuit, crippling the spacecraft's power, water, and life support systems and forcing the crew to abort the lunar landing.",
+      "num_contexts_retrieved": 3,
+      "scores": {
+        "response_relevancy": 0.0,
+        "faithfulness": 0.6666666666666666,
+        "bleu_score": 0.007309625804301036,
+        "rouge_score": 0.19148936170212766,
+        "context_precision": 0.0
+      }
+    },
+    {
+      "id": "q3",
+      "mission": "challenger",
+      "category": "disaster_analysis",
+      "question": "What caused the Space Shuttle Challenger disaster?",
+      "answer": "The Space Shuttle Challenger disaster was caused by the explosion of the shuttle approximately 1 minute and a half after launch from the Kennedy Space Center, as reported in the mission audio transcript (Source 1 | Mission: Challenger | Document: 108-AAG_STS-51L_Mission_Audio_transcript). The exact cause of the explosion was the failure of an O-ring seal in one of the solid rocket boosters, which led to the structural failure of the external fuel tank and the subsequent disintegration of the shuttle.\n\nKey points to note regarding the Challenger disaster:\n\n- The O-ring seal failure was a result of cold weather conditions at the time of launch, which compromised the resiliency of the O-rings and allowed hot gases to escape, leading to the catastrophic chain of events.\n- The disaster resulted in the loss of all seven crew members on board, including Christa McAuliffe, who was set to be the first civilian teacher in space.\n- The Challenger disaster led to a suspension of the Space Shuttle program and a thorough investigation by the Rogers Commission to determine the causes of the tragedy and recommend corrective actions to prevent future accidents.",
+      "reference": "The Challenger disaster was caused by the failure of an O-ring seal in the right solid rocket booster, which allowed hot pressurized gas to escape and ultimately triggered the structural breakup of the shuttle 73 seconds after launch, in part due to unusually cold temperatures at launch.",
+      "num_contexts_retrieved": 3,
+      "scores": {
+        "response_relevancy": 0.7437674652331173,
+        "faithfulness": 0.13333333333333333,
+        "bleu_score": 0.12702540433455597,
+        "rouge_score": 0.24166666666666664,
+        "context_precision": 0.8333333332916666
+      }
+    },
+    {
+      "id": "q4",
+      "mission": "apollo_13",
+      "category": "crew",
+      "question": "Who were the astronauts on the Apollo 13 crew and how did they survive the accident?",
+      "answer": "The astronauts on the Apollo 13 crew were Jim Lovell, Fred Haise, and Jack Swigert. They encountered an oxygen tank explosion that severely damaged their spacecraft while en route to the moon. Here's how they survived the accident based on the provided context:\n\n- **Troubleshooting and Oxygen Management:** After the oxygen tank explosion, the crew and ground control closely monitored oxygen quantities and pressures in the command module. They isolated the damaged oxygen tank to preserve the remaining oxygen for essential functions. The crew could also use oxygen from the lunar module if needed (Source 2).\n\n- **Utilizing Lunar Module as a Lifeboat:** The crew had to move into the lunar module, which was originally intended for moon landing, to conserve power, water, and other essential resources for the return journey to Earth. The lunar module provided a safe haven for the crew during the crisis (additional context not provided in the documents but known from the mission).\n\n- **Innovative Problem-Solving:** The crew and mission control worked together to improvise solutions for challenges like limited power, water, and carbon dioxide removal. They collaborated on procedures to conserve resources and ensure the crew's survival until they safely splashed down in the Pacific Ocean (additional context not provided in the documents but known from the mission).\n\nThe crew's resourcefulness, teamwork, and the support of mission control were crucial in ensuring their survival and safe return to Earth despite the life-threatening situation they faced during the Apollo 13 mission.",
+      "reference": "The Apollo 13 crew was Jim Lovell, Jack Swigert, and Fred Haise. After the oxygen tank explosion, they moved into the Lunar Module and used it as a 'lifeboat', rationing power, water, and oxygen for the trip back to Earth.",
+      "num_contexts_retrieved": 3,
+      "scores": {
+        "response_relevancy": 0.7901363324401736,
+        "faithfulness": 0.25,
+        "bleu_score": 0.20352111310371637,
+        "rouge_score": 0.19444444444444445,
+        "context_precision": 0.9999999999
+      }
+    },
+    {
+      "id": "q5",
+      "mission": "apollo_11",
+      "category": "technical",
+      "question": "What technical issues did the Apollo 11 Lunar Module encounter during descent to the Moon?",
+      "answer": "During the Apollo 11 mission, the Lunar Module encountered technical issues during its descent to the Moon. The issues were related to trajectory perturbations and guidance computer overload:\n\n1. Trajectory Perturbations:\n- The trajectory perturbations resulted from undocking and station-keeping maneuvers not being compensated for in the descent orbit insertion maneuver.\n- These errors directly affected the lunar module state-vector accuracy at the initiation of powered descent.\n- Source: NASA_NTRS_Archive_19710015566_textract_full_text\n\n2. Guidance Computer Overload:\n- The lunar module guidance computer was overloaded during the powered descent phase.\n- The flight control response to this problem was based on real-time data, and the information provided to the flight crew allowed them to continue the descent.\n- Source: NASA_NTRS_Archive_19710015566_textract_full_text\n\nUnfortunately, the documents do not provide further details on the specific consequences or resolutions of these technical issues during the Apollo 11 Lunar Module descent.",
+      "reference": "During the lunar descent, the Lunar Module's guidance computer triggered several 1202 and 1201 program alarms caused by an overload of incoming data, and the crew also had to manually fly past a boulder field to find a safe landing spot.",
+      "num_contexts_retrieved": 3,
+      "scores": {
+        "response_relevancy": 0.7931531143468472,
+        "faithfulness": 0.75,
+        "bleu_score": 0.026668457250922147,
+        "rouge_score": 0.15544041450777202,
+        "context_precision": 0.99999999995
+      }
+    },
+    {
+      "id": "q6",
+      "mission": "challenger",
+      "category": "timeline",
+      "question": "What is the timeline of events on the morning of the Challenger launch?",
+      "answer": "Based on the provided mission audio transcripts from the Challenger mission:\n\n- **4:00 a.m.:** Filling of the shuttle Challenger's external tank with liquid hydrogen and liquid oxygen began, which was a delay from the original schedule (Source 1).\n- **Approximately 5:00 a.m.:** The filling process of the external tank was ongoing, as it started around 4 a.m. (Source 1).\n- **9:37 a.m.:** The nominal launch window for Mission 51L opened (Source 2).\n- **10:38 a.m.:** The liftoff time for Mission 51L was tentatively planned for this time (Source 1).\n- **12:30 p.m.:** The launch window was scheduled to close at this time (Source 1).\n- **165:31:** Communications indicate a transition to the Marshall Space Flight Center for questions (Source 3).\n\nUnfortunately, the provided context does not offer a detailed timeline of events for the entire morning of the Challenger launch.",
+      "reference": "On the morning of January 28, 1986, the Challenger launch was delayed several times due to cold overnight temperatures and ice on the launch pad before finally lifting off at 11:38 a.m. EST, breaking apart approximately 73 seconds after liftoff.",
+      "num_contexts_retrieved": 3,
+      "scores": {
+        "response_relevancy": 0.49933644160658924,
+        "faithfulness": 0.7142857142857143,
+        "bleu_score": 0.02755129194148874,
+        "rouge_score": 0.13756613756613756,
+        "context_precision": 0.9999999999666667
+      }
+    },
+    {
+      "id": "q7",
+      "mission": "apollo_13",
+      "category": "technical",
+      "question": "How did the Apollo 13 crew remove excess carbon dioxide from the Lunar Module cabin?",
+      "answer": "The Apollo 13 crew removed excess carbon dioxide from the Lunar Module cabin by using a homemade device that included the addition of two command module lithium hydroxide scrubber canisters. This setup was rigged up by the crew themselves. The addition of these canisters to the homemade device reduced the quantity of carbon dioxide from slightly over 1 millimeter to 1/10th of a millimeter of mercury in the cabin. This information is sourced from the Apollo 13 Public Affairs Officer document.",
+      "reference": "The crew and mission control improvised an adapter, nicknamed the 'mailbox', built from spacecraft materials like plastic bags, cardboard, and tape, to fit the Command Module's square lithium hydroxide canisters into the Lunar Module's round receptacles.",
+      "num_contexts_retrieved": 3,
+      "scores": {
+        "response_relevancy": 1.0,
+        "faithfulness": 0.5714285714285714,
+        "bleu_score": 0.028828203209777838,
+        "rouge_score": 0.16666666666666666,
+        "context_precision": 0.49999999995
+      }
+    }
+  ],
+  "aggregate": {
+    "response_relevancy": 0.6894846996688825,
+    "faithfulness": 0.5360544217687074,
+    "bleu_score": 0.0670091760500768,
+    "rouge_score": 0.19067091028088373,
+    "context_precision": 0.7619047618607143
+  }
+}

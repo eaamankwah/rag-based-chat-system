@@ -1,0 +1,51 @@
+[
+    {
+      "id": "q1",
+      "mission": "apollo_11",
+      "category": "overview",
+      "question": "What was the main objective of the Apollo 11 mission?",
+      "reference": "Apollo 11's primary objective was to land astronauts on the Moon and return them safely to Earth, fulfilling President Kennedy's goal of a crewed lunar landing before the end of the 1960s."
+    },
+    {
+      "id": "q2",
+      "mission": "apollo_13",
+      "category": "emergency",
+      "question": "What emergency occurred on Apollo 13 and when did it happen?",
+      "reference": "About 56 hours into the mission, an oxygen tank in the Apollo 13 service module ruptured after a short circuit, crippling the spacecraft's power, water, and life support systems and forcing the crew to abort the lunar landing."
+    },
+    {
+      "id": "q3",
+      "mission": "challenger",
+      "category": "disaster_analysis",
+      "question": "What caused the Space Shuttle Challenger disaster?",
+      "reference": "The Challenger disaster was caused by the failure of an O-ring seal in the right solid rocket booster, which allowed hot pressurized gas to escape and ultimately triggered the structural breakup of the shuttle 73 seconds after launch, in part due to unusually cold temperatures at launch."
+    },
+    {
+      "id": "q4",
+      "mission": "apollo_13",
+      "category": "crew",
+      "question": "Who were the astronauts on the Apollo 13 crew and how did they survive the accident?",
+      "reference": "The Apollo 13 crew was Jim Lovell, Jack Swigert, and Fred Haise. After the oxygen tank explosion, they moved into the Lunar Module and used it as a 'lifeboat', rationing power, water, and oxygen for the trip back to Earth."
+    },
+    {
+      "id": "q5",
+      "mission": "apollo_11",
+      "category": "technical",
+      "question": "What technical issues did the Apollo 11 Lunar Module encounter during descent to the Moon?",
+      "reference": "During the lunar descent, the Lunar Module's guidance computer triggered several 1202 and 1201 program alarms caused by an overload of incoming data, and the crew also had to manually fly past a boulder field to find a safe landing spot."
+    },
+    {
+      "id": "q6",
+      "mission": "challenger",
+      "category": "timeline",
+      "question": "What is the timeline of events on the morning of the Challenger launch?",
+      "reference": "On the morning of January 28, 1986, the Challenger launch was delayed several times due to cold overnight temperatures and ice on the launch pad before finally lifting off at 11:38 a.m. EST, breaking apart approximately 73 seconds after liftoff."
+    },
+    {
+      "id": "q7",
+      "mission": "apollo_13",
+      "category": "technical",
+      "question": "How did the Apollo 13 crew remove excess carbon dioxide from the Lunar Module cabin?",
+      "reference": "The crew and mission control improvised an adapter, nicknamed the 'mailbox', built from spacecraft materials like plastic bags, cardboard, and tape, to fit the Command Module's square lithium hydroxide canisters into the Lunar Module's round receptacles."
+    }
+  ]
